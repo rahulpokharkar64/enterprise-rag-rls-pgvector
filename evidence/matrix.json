@@ -1,0 +1,926 @@
+{
+  "Q1": {
+    "priya": [
+      {
+        "rank": 1,
+        "doc_id": "app-002",
+        "title": "ReplicaSet",
+        "heading_path": "ReplicaSet > {{% heading \"whatsnext\" %}}",
+        "seq": 32,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+        "cosine_distance": 0.15687882900238037,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Learn about [Pods](/docs/concepts/workloads/pods).\n* Learn about [Deployments](/docs/concepts/workloads/controllers/deployment/).\n* [Run a Stateless Application Using a Deployment](/docs/tasks/run-application/run-stateless-application-deployment/),\nwhich relies on "
+      },
+      {
+        "rank": 2,
+        "doc_id": "app-001",
+        "title": "Deployments",
+        "heading_path": "Deployments",
+        "seq": 0,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "cosine_distance": 0.15947494386061822,
+        "content": "# Deployments  \nA _Deployment_ provides declarative updates for Pods and\nReplicaSets.  \nYou describe a _desired state_ in a Deployment, and the Deployment {{< glossary_tooltip term_id=\"controller\" >}} changes the actual state to the desired state at a controlled rate. You can define Deployments to c"
+      },
+      {
+        "rank": 3,
+        "doc_id": "app-001",
+        "title": "Deployments",
+        "heading_path": "Deployments > Writing a Deployment Spec > Replicas",
+        "seq": 70,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "cosine_distance": 0.17987922370073828,
+        "content": "### Replicas  \n`.spec.replicas` is an optional field that specifies the number of desired Pods. It defaults to 1.  \nShould you manually scale a Deployment, example via `kubectl scale deployment\ndeployment --replicas=X`, and then you update that Deployment based on a manifest\n(for example: by running"
+      },
+      {
+        "rank": 4,
+        "doc_id": "app-002",
+        "title": "ReplicaSet",
+        "heading_path": "ReplicaSet > Alternatives to ReplicaSet > Deployment (recommended)",
+        "seq": 27,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+        "cosine_distance": 0.19970440864562988,
+        "content": "## Alternatives to ReplicaSet  \n### Deployment (recommended)  \n[`Deployment`](/docs/concepts/workloads/controllers/deployment/) is an object which can own ReplicaSets and update\nthem and their Pods via declarative, server-side rolling updates.\nWhile ReplicaSets can be used independently, today they'"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > Understanding Kubernetes objects {#kubernetes-objects} > Object spec and status",
+        "seq": 4,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.20003259181976318,
+        "content": "might set the Deployment `spec` to specify that you want three replicas of\nthe application to be running. The Kubernetes system reads the Deployment\nspec and starts three instances of your desired application--updating\nthe status to match your spec. If any of those instances should fail\n(a status ch"
+      }
+    ],
+    "arjun": [
+      {
+        "rank": 1,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > Understanding Kubernetes objects {#kubernetes-objects} > Object spec and status",
+        "seq": 4,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.20003259181976318,
+        "content": "might set the Deployment `spec` to specify that you want three replicas of\nthe application to be running. The Kubernetes system reads the Deployment\nspec and starts three instances of your desired application--updating\nthe status to match your spec. If any of those instances should fail\n(a status ch"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.21795755624771118,
+        "content": "* **Service discovery and load balancing**\nKubernetes can expose a container using a DNS name or its own IP address.\nIf traffic to a container is high, Kubernetes is able to load balance and distribute\nthe network traffic so that the deployment is stable.\n* **Storage orchestration**\nKubernetes allow"
+      },
+      {
+        "rank": 3,
+        "doc_id": "plat-002",
+        "title": "Volumes",
+        "heading_path": "Volumes > Out-of-tree volume plugins > csi",
+        "seq": 32,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/",
+        "cosine_distance": 0.2334263096280783,
+        "content": "As part of that migration, you - or another cluster administrator - **must** have installed and configured\nthe appropriate CSI driver for that storage. The core of Kubernetes does not install that software for you.  \n---  \nAfter that migration, you can also define new PVCs and PVs that refer to the "
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 3,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.23732565418924823,
+        "content": "* **Automatic bin packing**\nYou provide Kubernetes with a cluster of nodes that it can use to run containerized tasks.\nYou tell Kubernetes how much CPU and memory (RAM) each container needs. Kubernetes can fit\ncontainers onto your nodes to make the best use of your resources.\n* **Self-healing**\nKube"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24413786863458808,
+        "content": "## Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}  \nContainers are a good way to bundle and run your applications. In a production\nenvironment, you need to manage the containers that run the applications and\nensure that there is no downtime. For example, if "
+      }
+    ],
+    "meena": [
+      {
+        "rank": 1,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > Understanding Kubernetes objects {#kubernetes-objects} > Object spec and status",
+        "seq": 4,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.20003259181976318,
+        "content": "might set the Deployment `spec` to specify that you want three replicas of\nthe application to be running. The Kubernetes system reads the Deployment\nspec and starts three instances of your desired application--updating\nthe status to match your spec. If any of those instances should fail\n(a status ch"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.21795755624771118,
+        "content": "* **Service discovery and load balancing**\nKubernetes can expose a container using a DNS name or its own IP address.\nIf traffic to a container is high, Kubernetes is able to load balance and distribute\nthe network traffic so that the deployment is stable.\n* **Storage orchestration**\nKubernetes allow"
+      },
+      {
+        "rank": 3,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > Kubernetes RBAC - privilege escalation risks {#privilege-escalation-risks} > Persistent volume creation",
+        "seq": 14,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.23052376508712769,
+        "content": "- The Kubernetes control plane components which creates PersistentVolumes based on PersistentVolumeClaims\nthat are configured for automatic provisioning.\nThis is usually setup by the Kubernetes provider or by the operator when installing a CSI driver.  \nWhere access to persistent storage is required"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 3,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.23732565418924823,
+        "content": "* **Automatic bin packing**\nYou provide Kubernetes with a cluster of nodes that it can use to run containerized tasks.\nYou tell Kubernetes how much CPU and memory (RAM) each container needs. Kubernetes can fit\ncontainers onto your nodes to make the best use of your resources.\n* **Self-healing**\nKube"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24413786863458808,
+        "content": "## Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}  \nContainers are a good way to bundle and run your applications. In a production\nenvironment, you need to manage the containers that run the applications and\nensure that there is no downtime. For example, if "
+      }
+    ],
+    "divya": [
+      {
+        "rank": 1,
+        "doc_id": "app-002",
+        "title": "ReplicaSet",
+        "heading_path": "ReplicaSet > {{% heading \"whatsnext\" %}}",
+        "seq": 32,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+        "cosine_distance": 0.15687882900238037,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Learn about [Pods](/docs/concepts/workloads/pods).\n* Learn about [Deployments](/docs/concepts/workloads/controllers/deployment/).\n* [Run a Stateless Application Using a Deployment](/docs/tasks/run-application/run-stateless-application-deployment/),\nwhich relies on "
+      },
+      {
+        "rank": 2,
+        "doc_id": "app-001",
+        "title": "Deployments",
+        "heading_path": "Deployments",
+        "seq": 0,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "cosine_distance": 0.15947494386061822,
+        "content": "# Deployments  \nA _Deployment_ provides declarative updates for Pods and\nReplicaSets.  \nYou describe a _desired state_ in a Deployment, and the Deployment {{< glossary_tooltip term_id=\"controller\" >}} changes the actual state to the desired state at a controlled rate. You can define Deployments to c"
+      },
+      {
+        "rank": 3,
+        "doc_id": "app-001",
+        "title": "Deployments",
+        "heading_path": "Deployments > Writing a Deployment Spec > Replicas",
+        "seq": 70,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "cosine_distance": 0.17987922370073828,
+        "content": "### Replicas  \n`.spec.replicas` is an optional field that specifies the number of desired Pods. It defaults to 1.  \nShould you manually scale a Deployment, example via `kubectl scale deployment\ndeployment --replicas=X`, and then you update that Deployment based on a manifest\n(for example: by running"
+      },
+      {
+        "rank": 4,
+        "doc_id": "app-002",
+        "title": "ReplicaSet",
+        "heading_path": "ReplicaSet > Alternatives to ReplicaSet > Deployment (recommended)",
+        "seq": 27,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+        "cosine_distance": 0.19970440864562988,
+        "content": "## Alternatives to ReplicaSet  \n### Deployment (recommended)  \n[`Deployment`](/docs/concepts/workloads/controllers/deployment/) is an object which can own ReplicaSets and update\nthem and their Pods via declarative, server-side rolling updates.\nWhile ReplicaSets can be used independently, today they'"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > Understanding Kubernetes objects {#kubernetes-objects} > Object spec and status",
+        "seq": 4,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.20003259181976318,
+        "content": "might set the Deployment `spec` to specify that you want three replicas of\nthe application to be running. The Kubernetes system reads the Deployment\nspec and starts three instances of your desired application--updating\nthe status to match your spec. If any of those instances should fail\n(a status ch"
+      }
+    ],
+    "nobody": []
+  },
+  "Q2": {
+    "priya": [
+      {
+        "rank": 1,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > Pod Identity > Stable Storage",
+        "seq": 15,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.2050540921059778,
+        "content": "### Stable Storage  \nFor each VolumeClaimTemplate entry defined in a StatefulSet, each Pod receives one\nPersistentVolumeClaim. In the nginx example above, each Pod receives a single PersistentVolume\nwith a StorageClass of `my-storage-class` and 1 GiB of provisioned storage. If no StorageClass\nis spe"
+      },
+      {
+        "rank": 2,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > PersistentVolumeClaim retention",
+        "seq": 38,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.24405503273010254,
+        "content": "## PersistentVolumeClaim retention  \nThe optional `.spec.persistentVolumeClaimRetentionPolicy` field controls if\nand how PVCs are deleted during the lifecycle of a StatefulSet. You must enable the\n`StatefulSetAutoDeletePVC` [feature gate](/docs/reference/command-line-tools-reference/feature-gates/)\n"
+      },
+      {
+        "rank": 3,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > Components > Volume Claim Templates",
+        "seq": 6,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.26566028594970703,
+        "content": "### Volume Claim Templates  \nYou can set the `.spec.volumeClaimTemplates` field to create a\n[PersistentVolumeClaim](/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims).\nThis will provide stable storage to the StatefulSet if either:  \n* The StorageClass specified for the volume claim i"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-003",
+        "title": "The Kubernetes API",
+        "heading_path": "The Kubernetes API > Persistence",
+        "seq": 15,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+        "cosine_distance": 0.328485369682312,
+        "content": "## Persistence  \nKubernetes stores the serialized state of objects by writing them into\n{{< glossary_tooltip term_id=\"etcd\" >}}."
+      },
+      {
+        "rank": 5,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > PersistentVolumeClaim retention",
+        "seq": 39,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.3569018244743347,
+        "content": "For each policy that you can configure, you can set the value to either `Delete` or `Retain`.  \n`Delete`\n: The PVCs created from the StatefulSet `volumeClaimTemplate` are deleted for each Pod\naffected by the policy. With the `whenDeleted` policy all PVCs from the\n`volumeClaimTemplate` are deleted af"
+      }
+    ],
+    "arjun": [
+      {
+        "rank": 1,
+        "doc_id": "plat-001",
+        "title": "Persistent Volumes",
+        "heading_path": "Persistent Volumes > Introduction",
+        "seq": 1,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+        "cosine_distance": 0.20641016960144043,
+        "content": "## Introduction  \nManaging storage is a distinct problem from managing compute instances.\nThe PersistentVolume subsystem provides an API for users and administrators\nthat abstracts details of how storage is provided from how it is consumed.\nTo do this, we introduce two new API resources: PersistentV"
+      },
+      {
+        "rank": 2,
+        "doc_id": "plat-001",
+        "title": "Persistent Volumes",
+        "heading_path": "Persistent Volumes > Introduction",
+        "seq": 2,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+        "cosine_distance": 0.21362954378128052,
+        "content": "This API object captures the details of the implementation of the storage, be that\nNFS, iSCSI, or a cloud-provider-specific storage system.  \nA _PersistentVolumeClaim_ (PVC) is a request for storage by a user. It is similar\nto a Pod. Pods consume node resources and PVCs consume PV resources. Pods ca"
+      },
+      {
+        "rank": 3,
+        "doc_id": "plat-002",
+        "title": "Volumes",
+        "heading_path": "Volumes > Types of volumes {#volume-types} > Volumes that use a PersistentVolumeClaim {#persistentvolumeclaim-volume-types}",
+        "seq": 12,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/",
+        "cosine_distance": 0.21478894993033826,
+        "content": "### Volumes that use a PersistentVolumeClaim {#persistentvolumeclaim-volume-types}  \nThese volumes request storage from a PersistentVolumeClaim.  \nYou can only use these types in a Pod.  \n* <a id=\"persistentvolumeclaim\"></a>[`persistentVolumeClaim`](/docs/reference/storage/volume-types/#persistentvo"
+      },
+      {
+        "rank": 4,
+        "doc_id": "plat-005",
+        "title": "Volume Snapshots",
+        "heading_path": "Volume Snapshots > Lifecycle of a volume snapshot and volume snapshot content > Persistent Volume Claim as Snapshot Source Protection",
+        "seq": 9,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/",
+        "cosine_distance": 0.22149400582945178,
+        "content": "### Persistent Volume Claim as Snapshot Source Protection  \nThe purpose of this protection is to ensure that in-use\nPersistentVolumeClaim\nAPI objects are not removed from the system while a snapshot is being taken from it\n(as this may result in data loss).  \nWhile a snapshot is being taken of a Pers"
+      },
+      {
+        "rank": 5,
+        "doc_id": "plat-001",
+        "title": "Persistent Volumes",
+        "heading_path": "Persistent Volumes > Claims As Volumes > A Note on Namespaces",
+        "seq": 68,
+        "access_class": "platform",
+        "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+        "cosine_distance": 0.2293967604637146,
+        "content": "### A Note on Namespaces  \nPersistentVolumes binds are exclusive, and since PersistentVolumeClaims are\nnamespaced objects, mounting claims with \"Many\" modes (`ROX`, `RWX`) is only\npossible within one namespace."
+      }
+    ],
+    "meena": [
+      {
+        "rank": 1,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > Kubernetes RBAC - privilege escalation risks {#privilege-escalation-risks} > Persistent volume creation",
+        "seq": 14,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.18932145833969116,
+        "content": "- The Kubernetes control plane components which creates PersistentVolumes based on PersistentVolumeClaims\nthat are configured for automatic provisioning.\nThis is usually setup by the Kubernetes provider or by the operator when installing a CSI driver.  \nWhere access to persistent storage is required"
+      },
+      {
+        "rank": 2,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > Kubernetes RBAC - privilege escalation risks {#privilege-escalation-risks} > Persistent volume creation",
+        "seq": 13,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.2912631034851074,
+        "content": "### Persistent volume creation  \nIf someone - or some application - is allowed to create arbitrary PersistentVolumes, that access\nincludes the creation of `hostPath` volumes, which then means that a Pod would get access\nto the underlying host filesystem(s) on the associated node. Granting that abili"
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-003",
+        "title": "The Kubernetes API",
+        "heading_path": "The Kubernetes API > Persistence",
+        "seq": 15,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+        "cosine_distance": 0.328485369682312,
+        "content": "## Persistence  \nKubernetes stores the serialized state of objects by writing them into\n{{< glossary_tooltip term_id=\"etcd\" >}}."
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Historical context for Kubernetes {#going-back-in-time}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.3963506817817688,
+        "content": "* Continuous development, integration, and deployment: provides reliable\nand frequent container image build and deployment with quick and efficient\nrollbacks (due to image immutability).\n* Dev and Ops separation of concerns: create application container images at\nbuild/release time rather than deplo"
+      },
+      {
+        "rank": 5,
+        "doc_id": "sec-004",
+        "title": "Security Checklist",
+        "heading_path": "Security Checklist > Secrets",
+        "seq": 21,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/",
+        "cosine_distance": 0.40300482511520386,
+        "content": "## Secrets  \n- [ ] ConfigMaps are not used to hold confidential data.\n- [ ] Encryption at rest is configured for the Secret API.\n- [ ] If appropriate, a mechanism to inject secrets stored in third-party storage\nis deployed and available.\n- [ ] Service account tokens are not mounted in pods that don'"
+      }
+    ],
+    "divya": [
+      {
+        "rank": 1,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > Kubernetes RBAC - privilege escalation risks {#privilege-escalation-risks} > Persistent volume creation",
+        "seq": 14,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.18932145833969116,
+        "content": "- The Kubernetes control plane components which creates PersistentVolumes based on PersistentVolumeClaims\nthat are configured for automatic provisioning.\nThis is usually setup by the Kubernetes provider or by the operator when installing a CSI driver.  \nWhere access to persistent storage is required"
+      },
+      {
+        "rank": 2,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > Pod Identity > Stable Storage",
+        "seq": 15,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.2050540921059778,
+        "content": "### Stable Storage  \nFor each VolumeClaimTemplate entry defined in a StatefulSet, each Pod receives one\nPersistentVolumeClaim. In the nginx example above, each Pod receives a single PersistentVolume\nwith a StorageClass of `my-storage-class` and 1 GiB of provisioned storage. If no StorageClass\nis spe"
+      },
+      {
+        "rank": 3,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > PersistentVolumeClaim retention",
+        "seq": 38,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.24405503273010254,
+        "content": "## PersistentVolumeClaim retention  \nThe optional `.spec.persistentVolumeClaimRetentionPolicy` field controls if\nand how PVCs are deleted during the lifecycle of a StatefulSet. You must enable the\n`StatefulSetAutoDeletePVC` [feature gate](/docs/reference/command-line-tools-reference/feature-gates/)\n"
+      },
+      {
+        "rank": 4,
+        "doc_id": "app-003",
+        "title": "StatefulSets",
+        "heading_path": "StatefulSets > Components > Volume Claim Templates",
+        "seq": 6,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "cosine_distance": 0.26566028594970703,
+        "content": "### Volume Claim Templates  \nYou can set the `.spec.volumeClaimTemplates` field to create a\n[PersistentVolumeClaim](/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims).\nThis will provide stable storage to the StatefulSet if either:  \n* The StorageClass specified for the volume claim i"
+      },
+      {
+        "rank": 5,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > Kubernetes RBAC - privilege escalation risks {#privilege-escalation-risks} > Persistent volume creation",
+        "seq": 13,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.2912631034851074,
+        "content": "### Persistent volume creation  \nIf someone - or some application - is allowed to create arbitrary PersistentVolumes, that access\nincludes the creation of `hostPath` volumes, which then means that a Pod would get access\nto the underlying host filesystem(s) on the associated node. Granting that abili"
+      }
+    ],
+    "nobody": []
+  },
+  "Q3": {
+    "priya": [
+      {
+        "rank": 1,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24807584285736084,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.26100431317065154,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 3,
+        "doc_id": "app-004",
+        "title": "DaemonSet",
+        "heading_path": "DaemonSet > {{% heading \"whatsnext\" %}}",
+        "seq": 24,
+        "access_class": "application",
+        "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+        "cosine_distance": 0.2828773260116577,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Learn about [Pods](/docs/concepts/workloads/pods):\n* Learn about [static Pods](/docs/tasks/configure-pod-container/static-pod/), which are useful for running Kubernetes\ncontrol plane components.\n* Find out how to use DaemonSets:\n* [Perform a rolling update on a Dae"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > What Kubernetes is not",
+        "seq": 8,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.2857321330468563,
+        "content": "first do A, then B, then C. In contrast, Kubernetes comprises a set of independent, composable\ncontrol processes that continuously drive the current state towards the provided desired state.\nIt shouldn't matter how you get from A to C. Centralized control is also not required. This\nresults in a syst"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.30123416774069134,
+        "content": "## Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}  \nContainers are a good way to bundle and run your applications. In a production\nenvironment, you need to manage the containers that run the applications and\nensure that there is no downtime. For example, if "
+      }
+    ],
+    "arjun": [
+      {
+        "rank": 1,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24807584285736084,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.26100431317065154,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > What Kubernetes is not",
+        "seq": 8,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.2857321330468563,
+        "content": "first do A, then B, then C. In contrast, Kubernetes comprises a set of independent, composable\ncontrol processes that continuously drive the current state towards the provided desired state.\nIt shouldn't matter how you get from A to C. Centralized control is also not required. This\nresults in a syst"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.30123416774069134,
+        "content": "## Why you need Kubernetes and what it can do {#why-you-need-kubernetes-and-what-can-it-do}  \nContainers are a good way to bundle and run your applications. In a production\nenvironment, you need to manage the containers that run the applications and\nensure that there is no downtime. For example, if "
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-003",
+        "title": "The Kubernetes API",
+        "heading_path": "The Kubernetes API > API groups and versioning",
+        "seq": 16,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+        "cosine_distance": 0.30160659551620483,
+        "content": "## API groups and versioning  \nTo make it easier to eliminate fields or restructure resource representations,\nKubernetes supports multiple API versions, each at a different API path, such\nas `/api/v1` or `/apis/rbac.authorization.k8s.io/v1alpha1`.  \nVersioning is done at the API level rather than at"
+      }
+    ],
+    "meena": [
+      {
+        "rank": 1,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices",
+        "seq": 0,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.16117136709860613,
+        "content": "# Role Based Access Control Good Practices  \nKubernetes RBAC is a key security control\nto ensure that cluster users and workloads have only the access to resources required to\nexecute their roles. It is important to ensure that, when designing permissions for cluster\nusers, the cluster administrator"
+      },
+      {
+        "rank": 2,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Periodic review",
+        "seq": 8,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.2292395830154419,
+        "content": "### Periodic review  \nIt is vital to periodically review the Kubernetes RBAC settings for redundant entries and\npossible privilege escalations.\nIf an attacker is able to create a user account with the same name as a deleted user,\nthey can automatically inherit all the rights of the deleted user, esp"
+      },
+      {
+        "rank": 3,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Least privilege",
+        "seq": 2,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.23923742771148682,
+        "content": "### Least privilege  \nIdeally, minimal RBAC rights should be assigned to users and service accounts. Only permissions\nexplicitly required for their operation should be used. While each cluster will be different,\nsome general rules that can be applied are :  \n- Assign permissions at the namespace lev"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24807584285736084,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 5,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Hardening",
+        "seq": 6,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.25980953813734287,
+        "content": "### Hardening  \nKubernetes defaults to providing access which may not be required in every cluster. Reviewing\nthe RBAC rights provided by default can provide opportunities for security hardening.\nIn general, changes should not be made to rights provided to `system:` accounts some options\nto harden c"
+      }
+    ],
+    "divya": [
+      {
+        "rank": 1,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices",
+        "seq": 0,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.16117136709860613,
+        "content": "# Role Based Access Control Good Practices  \nKubernetes RBAC is a key security control\nto ensure that cluster users and workloads have only the access to resources required to\nexecute their roles. It is important to ensure that, when designing permissions for cluster\nusers, the cluster administrator"
+      },
+      {
+        "rank": 2,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Periodic review",
+        "seq": 8,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.2292395830154419,
+        "content": "### Periodic review  \nIt is vital to periodically review the Kubernetes RBAC settings for redundant entries and\npossible privilege escalations.\nIf an attacker is able to create a user account with the same name as a deleted user,\nthey can automatically inherit all the rights of the deleted user, esp"
+      },
+      {
+        "rank": 3,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Least privilege",
+        "seq": 2,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.23923742771148682,
+        "content": "### Least privilege  \nIdeally, minimal RBAC rights should be assigned to users and service accounts. Only permissions\nexplicitly required for their operation should be used. While each cluster will be different,\nsome general rules that can be applied are :  \n- Assign permissions at the namespace lev"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.24807584285736084,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 5,
+        "doc_id": "sec-001",
+        "title": "Role Based Access Control Good Practices",
+        "heading_path": "Role Based Access Control Good Practices > General good practice > Hardening",
+        "seq": 6,
+        "access_class": "security",
+        "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "cosine_distance": 0.25980953813734287,
+        "content": "### Hardening  \nKubernetes defaults to providing access which may not be required in every cluster. Reviewing\nthe RBAC rights provided by default can provide opportunities for security hardening.\nIn general, changes should not be made to rights provided to `system:` accounts some options\nto harden c"
+      }
+    ],
+    "nobody": []
+  },
+  "Q4": {
+    "priya": [
+      {
+        "rank": 1,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.12991690635681152,
+        "content": "## Core Components  \nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components",
+        "seq": 0,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.14355337619781494,
+        "content": "# Kubernetes Components  \nThis page provides a high-level overview of the essential components that make up a Kubernetes cluster."
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.15369290113449097,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.17587034846124805,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components > Control Plane Components",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.20415346597710315,
+        "content": "### Control Plane Components  \nManage the overall state of the cluster:  \n[kube-apiserver](/docs/concepts/architecture/#kube-apiserver)\n: The core component server that exposes the Kubernetes HTTP API.  \n[etcd](/docs/concepts/architecture/#etcd)\n: Consistent and highly-available key value store for "
+      }
+    ],
+    "arjun": [
+      {
+        "rank": 1,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.12991690635681152,
+        "content": "## Core Components  \nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components",
+        "seq": 0,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.14355337619781494,
+        "content": "# Kubernetes Components  \nThis page provides a high-level overview of the essential components that make up a Kubernetes cluster."
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.15369290113449097,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.17587034846124805,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components > Control Plane Components",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.20415346597710315,
+        "content": "### Control Plane Components  \nManage the overall state of the cluster:  \n[kube-apiserver](/docs/concepts/architecture/#kube-apiserver)\n: The core component server that exposes the Kubernetes HTTP API.  \n[etcd](/docs/concepts/architecture/#etcd)\n: Consistent and highly-available key value store for "
+      }
+    ],
+    "meena": [
+      {
+        "rank": 1,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.12991690635681152,
+        "content": "## Core Components  \nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components",
+        "seq": 0,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.14355337619781494,
+        "content": "# Kubernetes Components  \nThis page provides a high-level overview of the essential components that make up a Kubernetes cluster."
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.15369290113449097,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.17587034846124805,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components > Control Plane Components",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.20415346597710315,
+        "content": "### Control Plane Components  \nManage the overall state of the cluster:  \n[kube-apiserver](/docs/concepts/architecture/#kube-apiserver)\n: The core component server that exposes the Kubernetes HTTP API.  \n[etcd](/docs/concepts/architecture/#etcd)\n: Consistent and highly-available key value store for "
+      }
+    ],
+    "divya": [
+      {
+        "rank": 1,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components",
+        "seq": 1,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.12991690635681152,
+        "content": "## Core Components  \nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:"
+      },
+      {
+        "rank": 2,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components",
+        "seq": 0,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.14355337619781494,
+        "content": "# Kubernetes Components  \nThis page provides a high-level overview of the essential components that make up a Kubernetes cluster."
+      },
+      {
+        "rank": 3,
+        "doc_id": "shr-002",
+        "title": "Overview",
+        "heading_path": "Overview > {{% heading \"whatsnext\" %}}",
+        "seq": 14,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/",
+        "cosine_distance": 0.15369290113449097,
+        "content": "## {{% heading \"whatsnext\" %}}  \n* Take a look at the [Kubernetes Components](/docs/concepts/overview/components/)\n* Take a look at the [Kubernetes API](/docs/concepts/overview/kubernetes-api/)\n* Take a look at [kubectl](/docs/concepts/overview/kubectl/): the primary CLI for Kubernetes\n* Take a look"
+      },
+      {
+        "rank": 4,
+        "doc_id": "shr-004",
+        "title": "Objects In Kubernetes",
+        "heading_path": "Objects In Kubernetes > {{% heading \"whatsnext\" %}}",
+        "seq": 12,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+        "cosine_distance": 0.17587034846124805,
+        "content": "## {{% heading \"whatsnext\" %}}  \nIf you're new to Kubernetes, read more about the following:  \n* [Pods](/docs/concepts/workloads/pods/) which are the most important basic Kubernetes objects.\n* [Deployment](/docs/concepts/workloads/controllers/deployment/) objects.\n* [Controllers](/docs/concepts/arch"
+      },
+      {
+        "rank": 5,
+        "doc_id": "shr-001",
+        "title": "Kubernetes Components",
+        "heading_path": "Kubernetes Components > Core Components > Control Plane Components",
+        "seq": 2,
+        "access_class": "shared",
+        "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
+        "cosine_distance": 0.20415346597710315,
+        "content": "### Control Plane Components  \nManage the overall state of the cluster:  \n[kube-apiserver](/docs/concepts/architecture/#kube-apiserver)\n: The core component server that exposes the Kubernetes HTTP API.  \n[etcd](/docs/concepts/architecture/#etcd)\n: Consistent and highly-available key value store for "
+      }
+    ],
+    "nobody": []
+  }
+}

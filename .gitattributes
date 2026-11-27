@@ -1,0 +1,6 @@
+# Files mounted into the Linux container keep LF; PowerShell scripts use CRLF on Windows
+*.sql  text eol=lf
+*.yml  text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.ps1  text eol=crlf

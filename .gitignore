@@ -1,0 +1,29 @@
+# --- Secrets: NEVER commit real credentials (assignment requirement) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Model / tool caches ---
+.cache/
+hf_cache/
+models/
+
+# --- Downloaded dataset working copies (manifest + selected files are committed) ---
+data/_k8s_sparse/
+
+# --- OS / IDE ---
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# --- Runtime logs (timestamped, may contain environment details) ---
+logs/*
+!logs/.gitkeep

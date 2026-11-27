@@ -1,0 +1,19 @@
+# Target: Python 3.12 (Windows, x64)
+# Install:  .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- Database ---
+psycopg[binary]>=3.2,<3.3        # PostgreSQL driver (bundled libpq, no compiler needed)
+pgvector>=0.3,<0.4               # registers the vector type with psycopg
+
+# --- Embeddings ---
+sentence-transformers>=3.3,<4.0  # loads BAAI/bge-small-en-v1.5 (pulls torch CPU)
+numpy>=1.26,<3.0
+
+# --- Chunking ---
+langchain-text-splitters>=0.3,<0.4   # fixed / recursive / markdown-header splitters
+
+# --- Utilities ---
+python-dotenv>=1.0,<2.0
+requests>=2.32,<3.0
+pandas>=2.2,<3.0
+tabulate>=0.9,<1.0
